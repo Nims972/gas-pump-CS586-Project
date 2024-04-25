@@ -12,8 +12,8 @@ import mdaefsm.state.State;
 import project.OP;
 
 public class MDA_EFSM {
-	protected State s;
-	protected State[] LS;
+	public State s;
+	public State[] LS;
 	OP op;
 	 public MDA_EFSM() {
 	        // list of states in the EFSM
@@ -37,8 +37,8 @@ public class MDA_EFSM {
 	public void start() {
 		s.start();
 	}
-	public void payType() {
-		s.payType();
+	public void payType(int t) {
+		s.payType(t);
 	}
 	public void reject() {
 		s.reject();
@@ -58,8 +58,8 @@ public class MDA_EFSM {
 	public void stopPump() {
 		s.stopPump();
 	}
-	public void selectGas() {
-		s.selectGas();
+	public void selectGas(int g) {
+		s.selectGas(g);
 	}
 	public void receipt() {
 		s.receipt();
@@ -70,4 +70,10 @@ public class MDA_EFSM {
 	public void continue_() {
 		s.continue_();
 	}
+	public OP getOP() {
+        return op;
+    }
+    public void setOP(OP op) {
+        this.op = op;
+    }
 }

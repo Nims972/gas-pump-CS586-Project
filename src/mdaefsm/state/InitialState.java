@@ -8,5 +8,11 @@ public class InitialState extends State{
 		super(model);
 		// TODO Auto-generated constructor stub
 	}
-
+	@Override
+	public void activate() {
+		if (model.s == model.LS[7]) {
+            model.s = model.LS[0];
+            model.getOP().storePrice();
+        }
+	}
 }

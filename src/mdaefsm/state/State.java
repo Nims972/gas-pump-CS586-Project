@@ -18,7 +18,7 @@ public abstract class State {
 		notAllowed();
 	}
 
-	public void payType() {
+	public void payType(int t) {
 		notAllowed();
 	}
 
@@ -46,7 +46,7 @@ public abstract class State {
 		notAllowed();
 	}
 
-	public void selectGas() {
+	public void selectGas(int g) {
 		notAllowed();
 	}
 

@@ -8,6 +8,7 @@ public class RejectMsg2 extends RejectMsg{
 	public void rejectMsg() {
 		// TODO Auto-generated method stub
 		
+		
 	}
 
 }
