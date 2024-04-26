@@ -30,98 +30,101 @@ import actions.impl2.StoreCash2;
 import actions.impl2.StorePrices2;
 import datastore.DS_2;
 import datastore.DataSource;
-
+/*
+ * this is factory class for GP2 and provides necessary "actions" strategies. 
+ * this is also having datasource and handling of which type of data needs to be initiated happens here.
+*/
 public class CF_GP2 extends AbstractFactory{
 	DataSource data;
 	public CF_GP2(){
-		data=new DS_2();
+		data=new DS_2(); //datasource reference which will be passed
 	}
 	@Override
-	public DataSource getDataObj() {
+	public DataSource getDataObj() {//returns the data reference
 		// TODO Auto-generated method stub
 		return data;
 	}
 
 	@Override
-	public StorePrices getStorePrices() {
+	public StorePrices getStorePrices() {//returns the StorePrice actions reference
 		// TODO Auto-generated method stub
 		return new StorePrices2(this.data);
 	}
 
 	@Override
-	public PayMsg getPayMsg() {
+	public PayMsg getPayMsg() {//returns PayMsg action reference
 		// TODO Auto-generated method stub
 		return new PayMsg2();
 	}
 
 	@Override
-	public StoreCash getStoreCash() {
+	public StoreCash getStoreCash() {//returns storecashreference
 		// TODO Auto-generated method stub
 		return new StoreCash2(this.data);
 	}
 
 	@Override
-	public DisplayMenu getDisplayMenu() {
+	public DisplayMenu getDisplayMenu() {//returns displaymenu reference
 		// TODO Auto-generated method stub
 		return new DisplayMenu2(data);
 	}
 
 	@Override
-	public RejectMsg getRejectMsg() {
+	public RejectMsg getRejectMsg() {//returns RejectMsg reference
 		// TODO Auto-generated method stub
 		return new RejectMsg2();
 	}
 
 	@Override
-	public SetPrice getSetPrice() {
+	public SetPrice getSetPrice() {// returns SetPrice reference
 		// TODO Auto-generated method stub
 		return new SetPrice2(this.data);
 	}
 
 	@Override
-	public SetInitialValues getSetInitialValues() {
+	public SetInitialValues getSetInitialValues() {//returns SetInitialValues reference
 		// TODO Auto-generated method stub
 		return new SetInitialValues2(this.data);
 	}
 
 	@Override
-	public PumpGasUnit getPumpGasUnit() {
+	public PumpGasUnit getPumpGasUnit() {//returns PumpGasUnit reference
 		// TODO Auto-generated method stub
 		return new PumpGasUnit2(this.data);
 	}
 
 	@Override
-	public GasPumpedMsg getGasPumpedMsg() {
+	public GasPumpedMsg getGasPumpedMsg() {//returns GasPumpedMsg reference
 		// TODO Auto-generated method stub
 		return new GasPumpedMsg2(this.data);
 	}
 
 	@Override
-	public PrintReceipt getPrintReceipt() {
+	public PrintReceipt getPrintReceipt() {// returns PrintReceipt reference
 		// TODO Auto-generated method stub
 		return new PrintReceipt2(this.data);
 	}
 
 	@Override
-	public CancelMsg getCancelMsg() {
+	public CancelMsg getCancelMsg() {// returns CanceMsg actions reference
 		// TODO Auto-generated method stub
 		return new CancelMsg2();
 	}
 
 	@Override
-	public ReturnCash getReturnCash() {
+	public ReturnCash getReturnCash() {// returns ReturnCash action reference
 		// TODO Auto-generated method stub
 		return new ReturnCash2(this.data);
 	}
 
 	@Override
-	public SetPayType getSetPayType() {
+	public SetPayType getSetPayType() {//returns SetPayType actions reference
 		// TODO Auto-generated method stub
 		return new SetPayType2(this.data);
 	}
 
 	@Override
-	public EjectCard getEjectCard() {
+	public EjectCard getEjectCard() {// returns EjectCard action reference
 		// TODO Auto-generated method stub
 		return new EjectCard2();
 	}

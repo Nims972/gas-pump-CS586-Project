@@ -1,7 +1,7 @@
 package actions.abs;
 
 import datastore.DataSource;
-
+// abstract class for printreceipt, impl of it generates the receipt
 public abstract class PrintReceipt {
 	protected DataSource data;
 

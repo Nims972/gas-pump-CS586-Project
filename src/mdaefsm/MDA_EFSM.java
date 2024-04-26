@@ -10,10 +10,10 @@ import mdaefsm.state.S5;
 import mdaefsm.state.S6;
 import mdaefsm.state.State;
 import project.OP;
-
+// mda_efsm class that manages diff implemantations of opeations and provides state wise control here.
 public class MDA_EFSM {
-	public State s;
-	public State[] LS;
+	public State s; // current state 
+	public State[] LS; // list of all state
 	OP op;
 	 public MDA_EFSM() {
 	        // list of states in the EFSM

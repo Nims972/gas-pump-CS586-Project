@@ -3,7 +3,7 @@ package actions.impl2;
 import actions.abs.SetPrice;
 import datastore.DS_2;
 import datastore.DataSource;
-
+// setPrice impl for gp2
 public class SetPrice2 extends SetPrice {
 	 public SetPrice2(DataSource data) {
 	        super(data);
@@ -13,7 +13,7 @@ public class SetPrice2 extends SetPrice {
 		// TODO Auto-generated method stub
 		 DS_2 d = (DS_2) data;
 	        if (g == 1) { // Regular selected
-	            d.setPrice(d.getRprice());// = d.R_price;
+	            d.setPrice(d.getRprice());
 	            d.setGasType("Regular");
 	        } else if (g == 2) { // Super selected
 	            d.setPrice(d.getDprice());

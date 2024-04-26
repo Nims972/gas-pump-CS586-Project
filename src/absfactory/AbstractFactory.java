@@ -15,7 +15,10 @@ import actions.abs.SetPrice;
 import actions.abs.StoreCash;
 import actions.abs.StorePrices;
 import datastore.DataSource;
+/*
+This is abstract factory class which defines methods and what concreate class will return 
 
+*/
 public abstract class  AbstractFactory {
 	 public abstract DataSource getDataObj();
 	 public abstract StorePrices getStorePrices();

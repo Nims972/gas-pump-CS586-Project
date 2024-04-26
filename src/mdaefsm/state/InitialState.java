@@ -1,7 +1,7 @@
 package mdaefsm.state;
 
 import mdaefsm.MDA_EFSM;
-
+// initial state , only activate is supported
 public class InitialState extends State{
 
 	public InitialState(MDA_EFSM model) {

@@ -1,7 +1,7 @@
 package mdaefsm.state;
 
 import mdaefsm.MDA_EFSM;
-
+// S0 state , start is supported
 public class S0 extends State {
 
 	public S0(MDA_EFSM mda_EFSM) {

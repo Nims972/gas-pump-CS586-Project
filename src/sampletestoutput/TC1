@@ -1,0 +1,64 @@
+Select GasPump to Operate
+(1) GasPump1 
+(2) GasPump2
+1
+		GasPump-1
+                  MENU of Operations
+          0. Activate(int)
+          1. Start()
+          2. PayCredit
+          3. Reject()
+          4. Cancel()
+          5. Approved()
+          6. PayCash(int)
+          7. StartPump()
+          8. Pump()
+          9. StopPump()
+          q. Quit the program
+  Please make a note of these operations
+           GasPump-1 Execution
+  Select Operation: 
+0-Activate,1-Start,2-PayCredit,3-Reject, 4-Cancel,5-Approved,6-PayCash,7-StartPump, 8-Pump, 9-StopPump, -1-quit
+0
+  Operation:  Activate(int a)
+  Enter value of the parameter a:
+4
+  Select Operation: 
+0-Activate,1-Start,2-PayCredit,3-Reject, 4-Cancel,5-Approved,6-PayCash,7-StartPump, 8-Pump, 9-StopPump, -1-quit
+1
+  Operation:  Start()
+Thank you for choosing GasPump-1
+Please select payment type
+  Select Operation: 
+0-Activate,1-Start,2-PayCredit,3-Reject, 4-Cancel,5-Approved,6-PayCash,7-StartPump, 8-Pump, 9-StopPump, -1-quit
+2
+  Operation:  PayCredit()
+PLEASE WAIT -- PROCESSING CREDIT CARD
+  Select Operation: 
+0-Activate,1-Start,2-PayCredit,3-Reject, 4-Cancel,5-Approved,6-PayCash,7-StartPump, 8-Pump, 9-StopPump, -1-quit
+5
+  Operation:  Approved()
+Regular [$4/liter] 
+Please Eject Your card safely
+Regular gasoline selected @ price of $4/liter
+Select (8) to start the pump
+  Select Operation: 
+0-Activate,1-Start,2-PayCredit,3-Reject, 4-Cancel,5-Approved,6-PayCash,7-StartPump, 8-Pump, 9-StopPump, -1-quit
+7
+  Operation:  StartPump()
+  Select Operation: 
+0-Activate,1-Start,2-PayCredit,3-Reject, 4-Cancel,5-Approved,6-PayCash,7-StartPump, 8-Pump, 9-StopPump, -1-quit
+8
+  Operation: Pump()
+Pumped 1 Liter of Regular gasoline
+Total # of Liter pumped: 1
+  Select Operation: 
+0-Activate,1-Start,2-PayCredit,3-Reject, 4-Cancel,5-Approved,6-PayCash,7-StartPump, 8-Pump, 9-StopPump, -1-quit
+9
+  Operation:  StopPump()
+Printing receipt ...
+######################################################################
+1 gallons of Regular gasoline @ $4/gallon
+Total: $4
+#######################################################################
+Transaction complete

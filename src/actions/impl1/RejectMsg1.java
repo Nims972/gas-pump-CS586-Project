@@ -1,7 +1,7 @@
 package actions.impl1;
 
 import actions.abs.RejectMsg;
-
+// rejectmsg impl for gp1
 public class RejectMsg1 extends RejectMsg{
 
 	@Override

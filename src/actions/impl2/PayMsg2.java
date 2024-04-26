@@ -1,7 +1,7 @@
 package actions.impl2;
 
 import actions.abs.PayMsg;
-
+// paymsg impl for gp2
 public class PayMsg2 extends PayMsg{
 
 	@Override

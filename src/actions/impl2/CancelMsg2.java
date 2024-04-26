@@ -1,7 +1,7 @@
 package actions.impl2;
 
 import actions.abs.CancelMsg;
-
+// cancelmsg action impl for gp2
 public class CancelMsg2 extends CancelMsg{
 
 	@Override

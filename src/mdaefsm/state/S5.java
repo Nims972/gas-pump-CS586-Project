@@ -1,7 +1,7 @@
 package mdaefsm.state;
 
 import mdaefsm.MDA_EFSM;
-
+// s5 pumps the gas unit by unit and stops the pump
 public class S5 extends State{
 
 	public S5(MDA_EFSM mda_EFSM) {

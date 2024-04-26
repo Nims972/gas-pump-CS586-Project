@@ -3,7 +3,7 @@ package actions.impl2;
 import actions.abs.GasPumpedMsg;
 import datastore.DS_2;
 import datastore.DataSource;
-
+// gaspumpedmsg impl for gp2
 public class GasPumpedMsg2 extends GasPumpedMsg {
 	public GasPumpedMsg2(DataSource data) {
 		super(data);

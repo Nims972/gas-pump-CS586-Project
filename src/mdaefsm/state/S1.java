@@ -1,7 +1,7 @@
 package mdaefsm.state;
 
 import mdaefsm.MDA_EFSM;
-
+//s1 state , selecting paytype is suported basis the paymsg menu
 public class S1 extends State{
 
 	public S1(MDA_EFSM mda_EFSM) {

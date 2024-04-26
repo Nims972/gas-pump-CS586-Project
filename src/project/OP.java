@@ -16,7 +16,8 @@ import actions.abs.SetPrice;
 import actions.abs.StoreCash;
 import actions.abs.StorePrices;
 import datastore.DataSource;
-
+// this is operations class, this class holds reference of all actions and implementations under it. 
+// and it hides the different types of implementations providing single method for both GP without checking extra stuff.
 public class OP {
 	DataSource d;
 	private CancelMsg cancelMsg;

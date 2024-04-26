@@ -1,5 +1,5 @@
 package datastore;
-
+// datasource for gp1, it stores the data for prices, total , pumped and cash taken etc. alongwith paytype
 public class DS_1 extends DataSource{
 	int temp_a;
 	int price;

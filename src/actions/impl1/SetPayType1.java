@@ -3,7 +3,7 @@ package actions.impl1;
 import actions.abs.SetPayType;
 import datastore.DS_1;
 import datastore.DataSource;
-
+// SetPayType impl for gp1
 public class SetPayType1 extends SetPayType{
 
 	public SetPayType1(DataSource data) {

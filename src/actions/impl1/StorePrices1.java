@@ -3,7 +3,7 @@ package actions.impl1;
 import actions.abs.StorePrices;
 import datastore.DS_1;
 import datastore.DataSource;
-
+// StorePrices impl for gp1
 public class StorePrices1 extends StorePrices{
 
 	public StorePrices1(DataSource data) {

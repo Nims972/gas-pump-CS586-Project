@@ -1,7 +1,7 @@
 package mdaefsm.state;
 
 import mdaefsm.MDA_EFSM;
-
+// s3 state , selecting gastype , canceling transactions or continueing to next state is supported here
 public class S3 extends State{
 
 	public S3(MDA_EFSM mda_EFSM) {
@@ -15,9 +15,6 @@ public class S3 extends State{
         }
     }
 
-    /*
-        Transition to State S0 and call CancelMsg() and ReturnCash() meta-actions
-     */
     @Override
     public void cancel() {
         if (model.s == model.LS[3]) {	

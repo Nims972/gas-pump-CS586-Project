@@ -1,0 +1,79 @@
+Select GasPump to Operate
+(1) GasPump1 
+(2) GasPump2
+2
+		GasPump-2
+                  MENU of Operations
+          0. Activate(float,float,float)
+          1. Start()
+          2. PayCash
+          3. Cancel()
+          4. Regular()
+          5. Diesel()
+          6. Premium
+          7. StartPump()
+          8. Stop()
+          9. PumpGallon()
+          10. Receipt()
+          11. NoReceipt()
+          -1. Quit the program
+  Please make a note of these operations
+           GasPump-2 Execution
+  Select Operation: 
+0-Activate,1-Start,2-PayCash,3-Cancel, 4-Regular,5-Diesel,6-Premium,7-StartPump, 8-Stop, 9-PumpGallon, 10-Receipt, 11 NoReceipt, -1 -quit
+0
+  Operation:  Activate(float a, float b, float c)
+  Enter value of the parameter a b c (Regular , Premium, Diesel):
+4.2 7.2 5.3
+  Select Operation: 
+0-Activate,1-Start,2-PayCash,3-Cancel, 4-Regular,5-Diesel,6-Premium,7-StartPump, 8-Stop, 9-PumpGallon, 10-Receipt, 11 NoReceipt, -1 -quit
+1
+  Operation:  Start()
+Thank you for choosing GasPump-2
+Please select payment type
+  Select Operation: 
+0-Activate,1-Start,2-PayCash,3-Cancel, 4-Regular,5-Diesel,6-Premium,7-StartPump, 8-Stop, 9-PumpGallon, 10-Receipt, 11 NoReceipt, -1 -quit
+2
+  Operation:  PayCash(int c)
+  Enter value of the parameter c:
+10
+Please select gas type: 
+(4) Regular [$4.2/gallon] 
+(5) Diesel [$5.3/gallon] 
+(6) Premium [$7.2/gallon]
+  Select Operation: 
+0-Activate,1-Start,2-PayCash,3-Cancel, 4-Regular,5-Diesel,6-Premium,7-StartPump, 8-Stop, 9-PumpGallon, 10-Receipt, 11 NoReceipt, -1 -quit
+6
+  Operation:  Premium(int c)
+Premium gasoline selected @ price of $7.2/gallon
+Select (7) to start the pump
+  Select Operation: 
+0-Activate,1-Start,2-PayCash,3-Cancel, 4-Regular,5-Diesel,6-Premium,7-StartPump, 8-Stop, 9-PumpGallon, 10-Receipt, 11 NoReceipt, -1 -quit
+7
+  Operation:  StartPump()
+  Select Operation: 
+0-Activate,1-Start,2-PayCash,3-Cancel, 4-Regular,5-Diesel,6-Premium,7-StartPump, 8-Stop, 9-PumpGallon, 10-Receipt, 11 NoReceipt, -1 -quit
+9
+  Operation:  PumpGallon()
+Pumped 1 gallon of Premium gasoline
+Total # of gallons pumped: 1
+  Select Operation: 
+0-Activate,1-Start,2-PayCash,3-Cancel, 4-Regular,5-Diesel,6-Premium,7-StartPump, 8-Stop, 9-PumpGallon, 10-Receipt, 11 NoReceipt, -1 -quit
+9
+  Operation:  PumpGallon()
+  Select Operation: 
+0-Activate,1-Start,2-PayCash,3-Cancel, 4-Regular,5-Diesel,6-Premium,7-StartPump, 8-Stop, 9-PumpGallon, 10-Receipt, 11 NoReceipt, -1 -quit
+10
+  Operation:  Receipt()
+Printing receipt ...
+#################################################
+1 gallon of Premium gasoline @ $7.2/gallon
+Total: $7.2
+Cash inserted: $10
+#################################################
+Transaction complete
+Cash to return: $2.8000002
+Returning $2.8000002
+Transaction finished
+  Select Operation: 
+0-Activate,1-Start,2-PayCash,3-Cancel, 4-Regular,5-Diesel,6-Premium,7-StartPump, 8-Stop, 9-PumpGallon, 10-Receipt, 11 NoReceipt, -1 -quit

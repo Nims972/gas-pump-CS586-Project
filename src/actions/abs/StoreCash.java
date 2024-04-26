@@ -1,5 +1,5 @@
 package actions.abs;
-
+// abstract class for StoreCash action, impl of it stores the cash in according datastore 
 import datastore.DataSource;
 
 public abstract class StoreCash {

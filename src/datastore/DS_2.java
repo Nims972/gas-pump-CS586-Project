@@ -1,4 +1,5 @@
 package datastore;
+//datasource for gp2, it stores the data for prices, total , pumped and cash taken etc.
 
 public class DS_2 extends DataSource{
 	float temp_a, temp_b, temp_c;

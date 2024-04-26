@@ -1,5 +1,5 @@
 package actions.abs;
-
+//abstract class for returncash, impl of it calculates the cash and returns it.
 import datastore.DataSource;
 
 public abstract class ReturnCash {

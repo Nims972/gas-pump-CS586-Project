@@ -1,0 +1,65 @@
+Select GasPump to Operate
+(1) GasPump1 
+(2) GasPump2
+1
+		GasPump-1
+                  MENU of Operations
+          0. Activate(int)
+          1. Start()
+          2. PayCredit
+          3. Reject()
+          4. Cancel()
+          5. Approved()
+          6. PayCash(int)
+          7. StartPump()
+          8. Pump()
+          9. StopPump()
+          q. Quit the program
+  Please make a note of these operations
+           GasPump-1 Execution
+  Select Operation: 
+0-Activate,1-Start,2-PayCredit,3-Reject, 4-Cancel,5-Approved,6-PayCash,7-StartPump, 8-Pump, 9-StopPump, -1-quit
+0
+  Operation:  Activate(int a)
+  Enter value of the parameter a:
+5
+  Select Operation: 
+0-Activate,1-Start,2-PayCredit,3-Reject, 4-Cancel,5-Approved,6-PayCash,7-StartPump, 8-Pump, 9-StopPump, -1-quit
+1
+  Operation:  Start()
+Thank you for choosing GasPump-1
+Please select payment type
+  Select Operation: 
+0-Activate,1-Start,2-PayCredit,3-Reject, 4-Cancel,5-Approved,6-PayCash,7-StartPump, 8-Pump, 9-StopPump, -1-quit
+6
+  Operation:  PayCash(int c)
+  Enter value of the parameter c:
+8
+Regular [$5/liter] 
+  Select Operation: 
+0-Activate,1-Start,2-PayCredit,3-Reject, 4-Cancel,5-Approved,6-PayCash,7-StartPump, 8-Pump, 9-StopPump, -1-quit
+7
+  Operation:  StartPump()
+  Select Operation: 
+0-Activate,1-Start,2-PayCredit,3-Reject, 4-Cancel,5-Approved,6-PayCash,7-StartPump, 8-Pump, 9-StopPump, -1-quit
+4
+  Operation:  Cancel()
+Operation Not Allowed
+  Select Operation: 
+0-Activate,1-Start,2-PayCredit,3-Reject, 4-Cancel,5-Approved,6-PayCash,7-StartPump, 8-Pump, 9-StopPump, -1-quit
+8
+  Operation: Pump()
+Pumped 1 Liter of null gasoline
+Total # of Liter pumped: 1
+  Select Operation: 
+0-Activate,1-Start,2-PayCredit,3-Reject, 4-Cancel,5-Approved,6-PayCash,7-StartPump, 8-Pump, 9-StopPump, -1-quit
+8
+  Operation: Pump()
+Printing receipt ...
+######################################################################
+1 gallons of null gasoline @ $5/gallon
+Total: $5
+#######################################################################
+Transaction complete
+  Select Operation: 
+0-Activate,1-Start,2-PayCredit,3-Reject, 4-Cancel,5-Approved,6-PayCash,7-StartPump, 8-Pump, 9-StopPump, -1-quit

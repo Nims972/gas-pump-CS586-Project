@@ -3,7 +3,7 @@ package actions.impl2;
 import actions.abs.PrintReceipt;
 import datastore.DS_2;
 import datastore.DataSource;
-
+// printreceipt impl for gp2
 public class PrintReceipt2 extends PrintReceipt{
 
 	public PrintReceipt2(DataSource data) {

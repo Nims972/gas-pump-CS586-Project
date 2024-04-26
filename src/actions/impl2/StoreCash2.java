@@ -3,7 +3,7 @@ package actions.impl2;
 import actions.abs.StoreCash;
 import datastore.DS_2;
 import datastore.DataSource;
-
+//storecash impl for gp2
 public class StoreCash2 extends StoreCash{
 	public StoreCash2(DataSource data) {
         super(data);

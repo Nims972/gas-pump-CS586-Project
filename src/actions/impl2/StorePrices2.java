@@ -3,7 +3,7 @@ package actions.impl2;
 import actions.abs.StorePrices;
 import datastore.DS_2;
 import datastore.DataSource;
-
+//storprices impl for gp2
 public class StorePrices2 extends StorePrices{
 
 	public StorePrices2(DataSource data) {
@@ -15,9 +15,9 @@ public class StorePrices2 extends StorePrices{
 	public void storePrice() {
 		// TODO Auto-generated method stub
 		DS_2 d=(DS_2)data;
-		d.setRprice(d.getTemp_a());
-		d.setDprice(d.getTemp_b());
-		d.setPprice(d.getTemp_c());
+		d.setRprice(d.getTemp_a()); // regular
+		d.setDprice(d.getTemp_b()); // diesel
+		d.setPprice(d.getTemp_c()); // premium
 		
 	}
 

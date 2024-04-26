@@ -1,7 +1,7 @@
 package mdaefsm.state;
 
 import mdaefsm.MDA_EFSM;
-
+//s6 handles printing / no printing receipts
 public class S6 extends State{
 
 	public S6(MDA_EFSM mda_EFSM) {

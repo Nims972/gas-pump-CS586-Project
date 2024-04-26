@@ -3,7 +3,7 @@ package actions.impl2;
 import actions.abs.DisplayMenu;
 import datastore.DS_2;
 import datastore.DataSource;
-
+//displaymenu impl for gp2
 public class DisplayMenu2 extends DisplayMenu{
 
 	public DisplayMenu2(DataSource data) {

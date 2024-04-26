@@ -1,7 +1,7 @@
 package mdaefsm.state;
 
 import mdaefsm.MDA_EFSM;
-
+// abstract state class in execution of whole transactions,
 public abstract class State {
 	String OPERATION_NOT_ALLOWED_MSG = "Operation Not Allowed";
 	MDA_EFSM model;

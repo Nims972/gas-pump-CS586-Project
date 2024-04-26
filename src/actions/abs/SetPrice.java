@@ -1,5 +1,5 @@
 package actions.abs;
-
+// abstract class for SetPrice , impl of it sets the price of gas.
 import datastore.DataSource;
 
 public abstract class SetPrice {

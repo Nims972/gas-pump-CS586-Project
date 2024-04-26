@@ -6,14 +6,15 @@ import absfactory.CF_GP1;
 import absfactory.CF_GP2;
 import gaspump.GasPump_1;
 import gaspump.GasPump_2;
-
+// this is driver class , for gp1 and gp2
+// we need to select 1 or 2 for gp1 and gp2
 public class Driver {
 	static Scanner sc = new Scanner(System.in);
 	public static void driveGP1() {
 		CF_GP1 cf1 = new CF_GP1();
 		GasPump_1 gp1 = new GasPump_1(cf1);
 
-		System.out.print("                          GasPump-1");
+		System.out.print("\t\tGasPump-1");
 		System.out.print("\n");
 		System.out.print("                  MENU of Operations");
 		System.out.print("\n");
@@ -44,17 +45,17 @@ public class Driver {
 		System.out.print("\n");
 		System.out.print("           GasPump-1 Execution");
 		System.out.print("\n");
-		char ch = '1';
+		int ch = 1;
 		
-		while (ch != 'q') {
+		while (ch != -1) {
 			System.out.print("  Select Operation: ");
 			System.out.print("\n");
 			System.out.print(
-					"0-Activate,1-Start,2-PayCredit,3-Reject, 4-Cancel,5-Approved,6-PayCash,7-StartPump, 8-Pump, 9-StopPump, q-quit");
+					"0-Activate,1-Start,2-PayCredit,3-Reject, 4-Cancel,5-Approved,6-PayCash,7-StartPump, 8-Pump, 9-StopPump, -1-quit");
 			System.out.print("\n");
-			ch = sc.next().charAt(0);
+			ch = sc.nextInt();
 			switch (ch) {
-			case '0': { // Activate()
+			case 0: { // Activate()
 				System.out.print("  Operation:  Activate(int a)");
 				System.out.print("\n");
 				System.out.print("  Enter value of the parameter a:");
@@ -64,42 +65,42 @@ public class Driver {
 				break;
 			}
 
-			case '1': { // Start
+			case 1: { // Start
 				System.out.print("  Operation:  Start()");
 				System.out.print("\n");
 				gp1.start();
 				break;
 			}
 
-			case '2': { // PayCredit
+			case 2: { // PayCredit
 				System.out.print("  Operation:  PayCredit()");
 				System.out.print("\n");
 				gp1.payCredit();
 				break;
 			}
 
-			case '3': { // Reject
+			case 3: { // Reject
 				System.out.print("  Operation:  Reject()");
 				System.out.print("\n");
 				gp1.reject();
 				break;
 			}
 
-			case '4': { // Cancel
+			case 4: { // Cancel
 				System.out.print("  Operation:  Cancel()");
 				System.out.print("\n");
 				gp1.cancel();
 				break;
 			}
 
-			case '5': { // Approved
+			case 5: { // Approved
 				System.out.print("  Operation:  Approved()");
 				System.out.print("\n");
 				gp1.approved();
 				break;
 			}
 
-			case '6': { // PayCash
+			case 6: { // PayCash
 				System.out.print("  Operation:  PayCash(int c)");
 				System.out.print("\n");
 				System.out.print("  Enter value of the parameter c:");
@@ -109,38 +110,38 @@ public class Driver {
 				break;
 			}
 
-			case '7': { // StartPump
+			case 7: { // StartPump
 				System.out.print("  Operation:  StartPump()");
 				System.out.print("\n");
 				gp1.startPump();
 				break;
 			}
 
-			case '8': { // Pump
+			case 8: { // Pump
 				System.out.print("  Operation: Pump()");
 				System.out.print("\n");
 				gp1.pump();
 				break;
 			}
 
-			case '9': { // StopPump
+			case 9: { // StopPump
 				System.out.print("  Operation:  StopPump()");
 				System.out.print("\n");
 				gp1.stopPump();
 				break;
 			}
 			}
-			; // endswitch
+
 
 		}
-		; // endwhile
+		
 	}
 
 	public static void driveGP2() {
 		CF_GP2 cf2 = new CF_GP2();
 		GasPump_2 gp2 = new GasPump_2(cf2);
 
-		System.out.print("                          GasPump-2");
+		System.out.print("\t\tGasPump-2");
 		System.out.print("\n");
 		System.out.print("                  MENU of Operations");
 		System.out.print("\n");
@@ -277,14 +278,14 @@ public class Driver {
 				break;
 			}
 			}
-			; // endswitch
+			
 
 		}
-		; // endwhile
+		
 	}
 
 	public static void main(String[] args) { // partial driver
-		System.out.println("Select GasPump to Operate\n(1) GasPump1 \n(2)GasPump2");
+		System.out.println("Select GasPump to Operate\n(1) GasPump1 \n(2) GasPump2");
 		int gpSelected=sc.nextInt();
 		if(gpSelected==1)driveGP1();
 		if(gpSelected==2)driveGP2();
